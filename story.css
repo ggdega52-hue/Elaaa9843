@@ -1,0 +1,129 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff #ffcce7); 
+  background-size: 600% 600%;
+  animation: gradientFlow 15s ease infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background-attachment: fixed; /* фон зафиксирован */
+  background-repeat: no-repeat;
+  background-size: cover; /* фон покрывает всю страницу */
+  overflow-x: hidden; 
+}
+
+@keyframes gradientFlow {
+  0%{
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 720px;    /* не шире 720px на десктопе */
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+}
+
+h1 {
+  color: #ff4d88;
+  text-align: center;
+  margin: 0 0 14px;
+  font-size: clamp(1.2rem, 3.6vw, 1.8rem); /* адаптивный размер */
+}
+
+p {
+  margin: 14px auto;
+  color: #333;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.6vw, 1.05rem);
+  max-width: 60ch;              /* ограничивает ширину строки для удобного чтения */
+  overflow-wrap: break-word;    /* переносит длинные слова */
+}
+
+.memory-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff6a9a, #ff4d88);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25 );
+}
+
+#img {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(img/888.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2;
+}
+
+#img:hover {
+  transition: scale(1.05);
+}
+
+.stars-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: url("img/01.png") center/cover no-repeat;
+  opacity: 0.7;
+[  ] }
+
+
+#fade-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+transform: translateY(0);
+  }
+}
+
