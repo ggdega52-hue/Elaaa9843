@@ -10,7 +10,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ffffff #ffcce7); 
+  background: linear-gradient(135deg, #ff6ba3, #ff9acd, #ffffff); 
   background-size: 600% 600%;
   animation: gradientFlow 15s ease infinite;
   -webkit-font-smoothing: antialiased;
