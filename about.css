@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(270deg, #ffffff, pink);
+  background: linear-gradient(270deg,pink,#eac7c7,#f2f2f2);
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ p {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  background: url("img/zzz.png") center/cover no-repeat;
+  background: url("img/433.png") center/cover no-repeat;
   opacity: 0.7;
 [  ] }
 
@@ -120,3 +120,12 @@ p {
 transform: translateY(0);
   }
 }
+.memory-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff6a9a, #ff4d88);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25 );
+  text-align: center;
